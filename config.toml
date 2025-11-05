@@ -9,8 +9,10 @@ main_button_sub = "powered by the two centres hosted at the Luxembourg House of 
 subtitle = "**Open source software is more important than ever!** *And we are committed to improve and cyber secure the society through open technologies.*"
 copyright = "The Luxembourg House of Cybersecurity - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 
+[pagination]
+    pagerSize = 4
+
 enableRobotsTXT = true
-Paginate = 4
 
 theme = "kode"
 

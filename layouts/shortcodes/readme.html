@@ -1,2 +1,13 @@
-{{ $data := resources.GetRemote ( printf "https://raw.githubusercontent.com/%s/master/README.md"  $.Page.Params.repository) }}
-{{ $data.Content | markdownify | safeHTML }}
+{{ $repo := $.Page.Params.repository }}
+{{ $main := resources.GetRemote (printf "https://raw.githubusercontent.com/%s/main/README.md" $repo) }}
+{{ with $main }}
+  {{ .Content | markdownify | safeHTML }}
+{{ else }}
+  {{ $master := resources.GetRemote (printf "https://raw.githubusercontent.com/%s/master/README.md" $repo) }}
+  {{ with $master }}
+    {{ .Content | markdownify | safeHTML }}
+  {{ else }}
+    {{ warnf "readme shortcode: README.md not found on main or master for repository %s" $repo }}
+    <p><em>README.md not found for {{ $repo }}.</em></p>
+  {{ end }}
+{{ end }}
