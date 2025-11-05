@@ -1,12 +1,2 @@
-{{ $repo := $.Page.Params.repository }}
-{{ if not $repo }}
-  {{ errorf "readme shortcode requires a `repository` parameter on %q" $.Page.File.Path }}
-{{ else }}
-  {{ $url := printf "https://raw.githubusercontent.com/%s/master/README.md" $repo }}
-  {{ with resources.GetRemote $url }}
-    {{ .Content | markdownify | safeHTML }}
-  {{ else }}
-    {{ warnf "readme shortcode: unable to fetch %q" $url }}
-  <p><a href="{{ printf "https://github.com/%s" $repo }}">View the project README on GitHub</a></p>
-  {{ end }}
-{{ end }}
+{{ $data := resources.GetRemote ( printf "https://raw.githubusercontent.com/%s/master/README.md"  $.Page.Params.repository) }}
+{{ $data.Content | markdownify | safeHTML }}
