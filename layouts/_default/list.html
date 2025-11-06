@@ -1,0 +1,20 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "header" }}{{ partial "header" . }}{{ end }}
+
+{{ define "main" }}
+<div id="hero" class="wrap">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <p>{{ . | markdownify }}</p>
+  {{ end }}
+</div>
+{{ $paginator := .Paginate (.Pages.ByWeight) }}
+<ul id="posts">
+  {{ range $paginator.Pages }}
+    {{ partial "page-summary" . }}
+  {{ end }}
+  <section>{{ partial "pagination" . }}</section>
+</ul>
+{{ end }}
+
+{{ define "footer" }}{{ partial "footer" . }}{{ end }}

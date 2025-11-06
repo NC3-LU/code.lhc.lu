@@ -15,6 +15,33 @@ copyright = "The Luxembourg House of Cybersecurity - Attribution-ShareAlike 4.0 
 Paginate = 4
 
 theme = "kode"
+themes = ["kode"]
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "themes/kode/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "themes/kode/static"
+    target = "static"
+  [[module.mounts]]
+    source = "themes/kode/archetypes"
+    target = "archetypes"
 
 [taxonomies]
     tag = "tags"
