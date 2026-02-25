@@ -1,0 +1,322 @@
+{
+  "spec_version": "1.0",
+  "generated_at": "2025-02-25T00:00:00Z",
+  "organization": {
+    "name": "Luxembourg House of Cybersecurity",
+    "domain": "code.lhc.lu",
+    "description": "The Luxembourg House of Cybersecurity (LHC) is the national cybersecurity agency of Luxembourg, hosting CIRCL (Computer Incident Response Center Luxembourg) and NC3 (National Cybercrime Competence Center).",
+    "country": "LU",
+    "links": {
+      "homepage": "https://lhc.lu",
+      "opensource_page": "https://code.lhc.lu",
+      "github_org": "https://github.com/NC3-LU"
+    }
+  },
+  "contacts": {
+    "opensource": {
+      "email": "code@lhc.lu",
+      "url": "https://code.lhc.lu"
+    },
+    "security": {
+      "url": "https://code.lhc.lu/.well-known/security.txt"
+    }
+  },
+  "policies": {
+    "vulnerability_disclosure": "https://code.lhc.lu/contact/#vulnerability-disclosure-related-to-projects"
+  },
+  "projects": [
+    {
+      "name": "MISP",
+      "description": "Open Source Threat Intelligence and Sharing Platform",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/MISP/MISP",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/misp/",
+        "homepage": "https://www.misp-project.org"
+      },
+      "tags": ["security", "threat-intelligence", "sharing", "circl"]
+    },
+    {
+      "name": "AIL",
+      "description": "Framework to analyse information leaks",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/ail-project/ail-framework",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/ail/",
+        "homepage": "https://www.ail-project.org"
+      },
+      "tags": ["security", "osint", "information-leaks", "circl"]
+    },
+    {
+      "name": "Lookyloo",
+      "description": "An open source forensics tool for investigating websites",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/Lookyloo/Lookyloo",
+        "license": "BSD-3-Clause",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/lookyloo/",
+        "homepage": "https://www.lookyloo.eu"
+      },
+      "tags": ["security", "forensics", "web", "circl"]
+    },
+    {
+      "name": "Pandora",
+      "description": "An analysis framework to discover if a file is suspicious",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/pandora-analysis/pandora",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/pandora/",
+        "homepage": "https://pandora.circl.lu"
+      },
+      "tags": ["security", "malware-analysis", "file-analysis", "circl"]
+    },
+    {
+      "name": "Vulnerability-Lookup",
+      "description": "Vulnerability-Lookup facilitates quick correlation of vulnerabilities from various sources, independent of vulnerability IDs, and streamlines the management of Coordinated Vulnerability Disclosure (CVD)",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/cve-search/vulnerability-lookup",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/vulnerability-lookup/",
+        "homepage": "https://vulnerability.circl.lu"
+      },
+      "tags": ["security", "vulnerability", "cve", "cvd", "circl"]
+    },
+    {
+      "name": "Hashlookup Forensics Analyser",
+      "description": "Analyse a forensic target (such as a directory) to find and report files found and not found from CIRCL hashlookup public service or the Bloom filter from CIRCL hashlookup.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/hashlookup/hashlookup-forensic-analyser",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/hashlookup/",
+        "homepage": "https://hashlookup.circl.lu"
+      },
+      "tags": ["security", "forensics", "hashlookup", "circl"]
+    },
+    {
+      "name": "Cerebrate",
+      "description": "A trusted contact information provider platform and interconnection orchestrator for relevant security tools (such as MISP).",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/cerebrate-project/cerebrate",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/cerebrate/"
+      },
+      "tags": ["security", "orchestration", "circl"]
+    },
+    {
+      "name": "D4",
+      "description": "A large-scale distributed sensor network to monitor DDoS and other malicious activities relying on an open and collaborative project.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/D4-project/d4-core",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/d4/",
+        "homepage": "https://www.d4-project.org"
+      },
+      "tags": ["security", "ddos", "network-monitoring", "circl"]
+    },
+    {
+      "name": "BGP Ranking",
+      "description": "A software to rank AS numbers based on their malicious activities",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/D4-project/BGP-Ranking",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/bgp/",
+        "homepage": "https://bgpranking.circl.lu"
+      },
+      "tags": ["security", "bgp", "network", "circl"]
+    },
+    {
+      "name": "URL Abuse",
+      "description": "Platform for URL review, analysis and black-list reporting",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/CIRCL/url-abuse",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/url-abuse/",
+        "homepage": "https://www.circl.lu/services/urlabuse/"
+      },
+      "tags": ["security", "url", "phishing", "circl"]
+    },
+    {
+      "name": "Typosquatting-finder",
+      "description": "Potential typosquatting domains list generator engine",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/ail-project/ail-typo-website",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/typo-finder/"
+      },
+      "tags": ["security", "typosquatting", "domains", "circl"]
+    },
+    {
+      "name": "SCANDALE",
+      "description": "A libre software which is providing a backend architecture for collecting data from probes and storing proof of checks.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/scandale-project/scandale",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/scandale/"
+      },
+      "tags": ["security", "monitoring", "probes", "circl"]
+    },
+    {
+      "name": "MONARC",
+      "description": "A method, a software, a platform, allowing an optimised, precise and repeatable risk assessment",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/monarc-project/MonarcAppFO",
+        "license": "GNU Affero General Public License",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/monarc/",
+        "homepage": "https://www.monarc.lu"
+      },
+      "tags": ["security", "risk-assessment", "nc3"]
+    },
+    {
+      "name": "Informed Governance Project",
+      "description": "A set of tools related to the NIS Informed Governance Project, including a portal, governance platform, and NIS Incident Notification Platform.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/informed-governance-project/architecture",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/informed-governance-project/",
+        "homepage": "https://github.com/informed-governance-project"
+      },
+      "tags": ["security", "governance", "nis", "nc3"]
+    },
+    {
+      "name": "MOSP",
+      "description": "Platform for creating, editing and sharing validated JSON objects of any type",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/NC3-LU/MOSP",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/mosp/",
+        "homepage": "https://objects.monarc.lu"
+      },
+      "tags": ["security", "json", "sharing", "nc3"]
+    },
+    {
+      "name": "PyMOSP",
+      "description": "PyMOSP is a Python library to access MOSP.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/NC3-LU/PyMOSP",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/pymosp/"
+      },
+      "tags": ["security", "python", "library", "nc3"]
+    },
+    {
+      "name": "Fit4Cybersecurity",
+      "description": "A self-assessment tool to help business owners implement a better cybersecurity strategy.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/NC3-LU/Fit4Cybersecurity",
+        "license": "GNU Affero General Public License",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/fit4cybersecurity/",
+        "homepage": "https://fit4cybersecurity.nc3.lu"
+      },
+      "tags": ["security", "self-assessment", "nc3"]
+    },
+    {
+      "name": "OpenXeco",
+      "description": "aka 'open exchange for ecosystems', an ecosystem Management & interconnection platform",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/CybersecurityLuxembourg/openxeco-core",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/openxeco/"
+      },
+      "tags": ["platform", "ecosystem", "nc3"]
+    },
+    {
+      "name": "Testing Platform",
+      "description": "A set of tools that allow any organisation to start testing its systems in order to identify known weaknesses or vulnerabilities",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/NC3-LU/TestingPlatform",
+        "license": "GNU Affero General Public License",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/testing/"
+      },
+      "tags": ["security", "testing", "vulnerability", "nc3"]
+    },
+    {
+      "name": "range42",
+      "description": "Range42 is a modular cyber range platform designed for real-world readiness. We build, deploy, and document offensive, defensive, and hybrid cyber training environments using reproducible, infrastructure-as-code methodologies.",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/range42/range42",
+        "license": "AGPL-3.0",
+        "type": "git"
+      },
+      "links": {
+        "project_page": "https://code.lhc.lu/projects/range42/"
+      },
+      "tags": ["security", "cyber-range", "training", "nc3"]
+    }
+  ]
+}
