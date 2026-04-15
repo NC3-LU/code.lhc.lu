@@ -1,0 +1,87 @@
+name: Generate Open Contributions Descriptor
+
+on:
+  schedule:
+    # Every Monday at 04:00 UTC
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+  push:
+    branches: ["theme_kode"]
+    paths:
+      - 'content/projects/**'
+      - 'data/authors/**'
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  generate-ocd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: theme_kode
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download OCD generator
+        run: |
+          curl -fsSL \
+            https://raw.githubusercontent.com/ossbase-org/Open-Contributions-Descriptor/refs/heads/main/bin/github-to-ocd.py \
+            -o github-to-ocd.py
+
+      - name: Generate OCD — CIRCL
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python github-to-ocd.py \
+            --org CIRCL \
+            --domain code.lhc.lu \
+            --output ocd.json
+
+      - name: Merge OCD — NC3-LU
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python github-to-ocd.py \
+            --org NC3-LU \
+            --domain code.lhc.lu \
+            --input ocd.json \
+            --merge-projects \
+            --output ocd.json
+
+      - name: Merge OCD — CybersecurityLuxembourg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python github-to-ocd.py \
+            --org CybersecurityLuxembourg \
+            --domain code.lhc.lu \
+            --input ocd.json \
+            --merge-projects \
+            --output ocd.json
+
+      - name: Install to static well-known
+        run: |
+          mkdir -p static/.well-known
+          cp ocd.json static/.well-known/open-contributions.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/.well-known/open-contributions.json
+          git diff --cached --quiet && echo "No changes to OCD file." || \
+            git commit -m "upd: [ocd] Regenerate open-contributions.json" && \
+            git push
