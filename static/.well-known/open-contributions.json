@@ -1,6 +1,6 @@
 {
   "spec_version": "1.0",
-  "generated_at": "2026-06-29T05:33:56Z",
+  "generated_at": "2026-07-06T05:25:22Z",
   "organization": {
     "name": "CYBERSECURITY Luxembourg",
     "domain": "code.lhc.lu",
@@ -98,28 +98,6 @@
       "release": {
         "changelog": "https://github.com/CybersecurityLuxembourg/openxeco-web-portal/releases",
         "security_policy": "https://github.com/CybersecurityLuxembourg/openxeco-web-portal/security/policy"
-      }
-    },
-    {
-      "name": "cswl.lu",
-      "description": "No description provided.",
-      "status": "active",
-      "repository": {
-        "url": "https://github.com/CybersecurityLuxembourg/cswl.lu",
-        "license": "BSD-2-Clause",
-        "type": "git",
-        "clone": "https://github.com/CybersecurityLuxembourg/cswl.lu.git"
-      },
-      "links": {
-        "releases": "https://github.com/CybersecurityLuxembourg/cswl.lu/releases"
-      },
-      "participate": {
-        "issues": "https://github.com/CybersecurityLuxembourg/cswl.lu/issues",
-        "good_first_issues": "https://github.com/CybersecurityLuxembourg/cswl.lu/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
-      },
-      "release": {
-        "changelog": "https://github.com/CybersecurityLuxembourg/cswl.lu/releases",
-        "security_policy": "https://github.com/CybersecurityLuxembourg/cswl.lu/security/policy"
       }
     },
     {
