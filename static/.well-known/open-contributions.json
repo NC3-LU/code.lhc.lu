@@ -1,6 +1,6 @@
 {
   "spec_version": "1.0",
-  "generated_at": "2026-11-02T04:04:28Z",
+  "generated_at": "2026-11-09T04:04:35Z",
   "organization": {
     "name": "CYBERSECURITY Luxembourg",
     "domain": "code.lhc.lu",
@@ -11,29 +11,6 @@
     }
   },
   "projects": [
-    {
-      "name": "cybersecurity.lu",
-      "description": "Main portal of CYBERSECURITY Luxembourg: https://cybersecurity.lu/",
-      "status": "active",
-      "repository": {
-        "url": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu",
-        "license": "BSD-2-Clause",
-        "type": "git",
-        "clone": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu.git"
-      },
-      "links": {
-        "project_page": "https://cybersecurity.lu/",
-        "releases": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/releases"
-      },
-      "participate": {
-        "issues": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/issues",
-        "good_first_issues": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
-      },
-      "release": {
-        "changelog": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/releases",
-        "security_policy": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/security/policy"
-      }
-    },
     {
       "name": "openxeco-core",
       "description": "Generic API and web projects of openXeco",
@@ -76,6 +53,29 @@
       "release": {
         "changelog": "https://github.com/CybersecurityLuxembourg/cyberr-middleware/releases",
         "security_policy": "https://github.com/CybersecurityLuxembourg/cyberr-middleware/security/policy"
+      }
+    },
+    {
+      "name": "cybersecurity.lu",
+      "description": "Main portal of CYBERSECURITY Luxembourg: https://cybersecurity.lu/",
+      "status": "active",
+      "repository": {
+        "url": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu",
+        "license": "BSD-2-Clause",
+        "type": "git",
+        "clone": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu.git"
+      },
+      "links": {
+        "project_page": "https://cybersecurity.lu/",
+        "releases": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/releases"
+      },
+      "participate": {
+        "issues": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/issues",
+        "good_first_issues": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+      },
+      "release": {
+        "changelog": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/releases",
+        "security_policy": "https://github.com/CybersecurityLuxembourg/cybersecurity.lu/security/policy"
       }
     },
     {
